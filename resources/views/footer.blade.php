@@ -1,4 +1,4 @@
-<section class="info_section layout_padding">
+<section class="info_section m-auto layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -29,17 +29,17 @@
             </h5>
             <div class="social-box">
               <a href="https://web.facebook.com/people/Smarters-Recipes/61563752333165/ ">
-                <img src="images/fb.png" alt="">
+                <img src="{{asset('images/fb.png')}}" alt="">
               </a>
 
               <a href="/">
-                <img src="images/twitter.png" alt="">
+                <img src="{{asset('images/twitter.png')}}" alt="">
               </a>
               <a href="/">
-                <img src="images/linkedin.png" alt="">
+                <img src="{{asset('images/linkedin.png')}}" alt="">
               </a>
               <a href=" https://www.instagram.com/smartersrecipes/ ">
-                <img src="images/instagram.png" alt="">
+                <img src="{{asset('images/instagram.png')}}" alt="">
               </a>
             </div>
           </div>

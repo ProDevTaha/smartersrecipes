@@ -24,6 +24,13 @@ Route::get('/privacy', function () {
 Route::get('/return', function () {
     return view('return');
 });
+Route::get('/service', function () {
+    return view('/#services');
+});
+
+Route::get('/contact', function () {
+    return view('/#contact');
+});
 
 Route::controller(CheckoutController::class)->group(function(){
     Route::post('stripe', 'stripePost')->name('stripe.post');

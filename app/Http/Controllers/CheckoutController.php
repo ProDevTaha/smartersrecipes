@@ -136,6 +136,7 @@ class CheckoutController extends Controller
                 . ($request->offre ? "&offre=" . $request->offre : ''))
                 ;
             }else if (isset($request->thankyou) && $request->thankyou == 'technooiptv'){
+                config(['mail.from.name' => 'Technooiptv']);
                 Mail::send('emails.newOrder',$dataOrder,function($message){
                   $message->to('technoiptvservice@gmail.com','Hicham marhar')
                   ->subject('New Order Technoiptv');
@@ -201,12 +202,12 @@ class CheckoutController extends Controller
           'thankyou' =>$request->thankyou
         ]; 
         $this->saveData($data); 
-        return view('payment.checkout',$data);
+        return view('checkout',$data);
       
       }else if($request->isMethod('get'))
       {
         $data = $_SESSION['data']; 
-        return view('payment.checkout',$data); 
+        return view('checkout',$data); 
       }else{
         $data = [
           'price' =>$request->price,
@@ -215,7 +216,7 @@ class CheckoutController extends Controller
           'thankyou' =>$request->thankyou,
         ]; 
         $this->saveData($data); 
-        return view('payment.checkout',$data);  
+        return view('checkout',$data);  
       }
      
     }
@@ -231,12 +232,12 @@ class CheckoutController extends Controller
         ];
 
         $this->saveData($data); 
-        return view('payment.checkout',$data);
+        return view('checkout',$data);
       
       }else if($request->isMethod('get'))
       {
         $data = $_SESSION['data']; 
-        return view('payment.checkout',$data); 
+        return view('checkout',$data); 
       }else{
         $data = [
           'price' =>$request->price,
@@ -245,7 +246,7 @@ class CheckoutController extends Controller
           'thankyou' =>$request->thankyou
         ];
         $this->saveData($data); 
-        return view('payment.checkout',$data);  
+        return view('checkout',$data);  
       }
      
     }
@@ -261,12 +262,12 @@ class CheckoutController extends Controller
           'remoteSubmit' => false
         ]; 
         $this->saveData($data); 
-        return view('payment.checkout',$data);
+        return view('checkout',$data);
       
       }else if($request->isMethod('get'))
       {
         $data = $_SESSION['data']; 
-        return view('payment.checkout',$data); 
+        return view('checkout',$data); 
       }else{
         $data = [
           'price' =>$request->price,

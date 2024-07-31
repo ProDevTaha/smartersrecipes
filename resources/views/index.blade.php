@@ -41,7 +41,7 @@
         </header>
         <!-- end header section -->
         <!-- slider section -->
-        <section class=" slider_section position-relative">
+        <section class="slider_section position-relative">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
@@ -215,7 +215,7 @@
 
     <section class="fruit_section" id="books">
         <div class="container">
-        <h2 class="custom_heading">books</h2>
+        <h2 class="custom_heading text-danger">books</h2>
         <div class="row layout_padding2">
             <div class="col-md-8">
             <div class="fruit_detail-box">

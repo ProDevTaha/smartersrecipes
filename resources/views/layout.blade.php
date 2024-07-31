@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>app hicham</title>
+  <title>Smartersrecipes</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -31,7 +31,7 @@
 
 <body>
   @yield('content')
-
+  
   <script type="text/javascript" src="{{asset('js/jquery-3.4.1.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
